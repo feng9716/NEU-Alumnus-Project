@@ -9,6 +9,7 @@ export const SERVER_ERROR = {
   WRONG_AUTHENTICATION: "wrong-authentication",
   MISSING_FIELDS: "missing-fields",
   DUPLICATE_USERNAME: "duplicate-username",
+  WRONG_AUTHORIZATION: "wrong-authorization",
 };
 
 export const CLIENT_ERROR = {
@@ -25,6 +26,7 @@ export const MESSAGE = {
   [SERVER_ERROR.INVALID_REQUEST]: "Your input is missing value. Please check and submit again",
   [CLIENT_ERROR.NETWORK_ERROR]: "Connection error, please check connection and try again",
   [SERVER_ERROR.WRONG_AUTHENTICATION]: "You are not allowed to login with current authority",
+  [SERVER_ERROR.WRONG_AUTHORIZATION]: "You do not have access to this part",
   [SERVER_ERROR.MISSING_FIELDS]: "Name cannot be empty",
   [SERVER_ERROR.DUPLICATE_USERNAME]:
     "One of faculties already owned the username, please choose another one.",

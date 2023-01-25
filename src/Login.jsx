@@ -14,6 +14,7 @@ function Login(props) {
     e.preventDefault();
     fetchLoginByUsername(usernameInput, isStudentLogin)
       .then((body) => {
+        console.log(body);
         onLogin(body);
       })
       .catch((err) => {

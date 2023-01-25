@@ -49,6 +49,7 @@ app.post("/api/v1/session", (req, res) => {
 
   if (!username || username === "") {
     res.status(400).json({ error: SERVER_ERROR.REQUIRE_USERNAME });
+    return;
   }
 
   if (!isValidUsername(username)) {
@@ -76,13 +77,16 @@ app.post("/api/v1/session", (req, res) => {
     // if login is a faculty login, we do not create a new faculty
     // We only check if there is a faculty user
     id = users.userIsStored(username);
+    if (!id) {
+      res.status(403).json({ error: SERVER_ERROR.WRONG_AUTHORIZATION });
+      return;
+    }
   }
-
   const authority = users.getUserAuthority(id);
 
   // check if the user's authority is same with login authority
   if ((isStudentLogin && authority === "advisor") || (!isStudentLogin && authority === "student")) {
-    res.status(403).json({ error: SERVER_ERROR.WRONG_AUTHENTICATION });
+    res.status(403).json({ error: SERVER_ERROR.WRONG_AUTHORIZATION });
     return;
   }
 

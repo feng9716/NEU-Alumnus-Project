@@ -7,6 +7,7 @@ const SERVER_ERROR = {
   STUDENT_NOT_FOUND: "student-not-found",
   INVALID_REQUEST: "invalid-request",
   WRONG_AUTHENTICATION: "wrong-authentication",
+  WRONG_AUTHORIZATION: "wrong-authorization",
   MISSING_FIELDS: "missing-fields",
   DUPLICATE_USERNAME: "duplicate-username",
 };
