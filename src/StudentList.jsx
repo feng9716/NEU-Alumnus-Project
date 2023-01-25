@@ -34,7 +34,7 @@ function StudentList(props) {
 
         setErrorMessage(err.error);
       });
-  }, [students]);
+  }, []);
 
   function onClickStudent(event) {
     event.preventDefault();
@@ -58,16 +58,18 @@ function StudentList(props) {
           value={searchQuery}
           placeholder="Search By Name"
           onInput={(event) => {
-            if (searchQuery === "") {
-              setQueried(students);
-            }
             const query = event.target.value;
             console.log(query);
             setSearchQuery(query);
-            const q = students.filter((student) =>
+            if (query === "") {
+              setQueried(students);
+              return;
+            }
+
+            const queried = students.filter((student) =>
               student[1].information.name.toLowerCase().includes(query)
             );
-            setQueried(q);
+            setQueried(queried);
           }}
         />
       </div>
