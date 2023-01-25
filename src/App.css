@@ -1,0 +1,90 @@
+.App{
+    height: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: 2rem auto;
+
+
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    padding: 2rem;
+    border: 2px solid #0e8cb3;
+    border-radius: 40px;
+}
+
+.input-username{
+    margin:1rem;
+}
+
+.login-form button {
+    height:40px;
+    width: 80%;
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    border-radius: 5px;
+    margin:1rem;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+.login-form button:hover{
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-form button.switch-authority{
+    border: none;
+    font-size: large;
+    background-color: transparent;
+    color:cadetblue;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.update-button{
+    height:40px;
+    width: 80%;
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    border-radius: 5px;
+    margin:1rem;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+.update-button:hover{
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.error{
+    font-size: large;
+    font-weight: 600;
+    color:red
+}

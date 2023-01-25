@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 1rem 1rem;
+    background-color: crimson;
+}
+
+.header-title{
+    color:black;
+    margin-right:2rem;
+
+}
+
+.header-button{
+    font-weight: 500;
+    font-size:1rem;
+    background-color: transparent;
+    cursor:pointer;
+    border: none;
+}
+
+.logout-button{
+    margin-left: auto;
+}

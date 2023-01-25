@@ -1,0 +1,10 @@
+.input-cell{
+    margin: 1rem;
+}
+
+.input-cell input{
+    float: right;
+    clear: both;
+    border: none;
+  border-bottom: 2px solid black;
+}

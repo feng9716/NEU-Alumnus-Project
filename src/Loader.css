@@ -1,0 +1,16 @@
+.loader{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.gg-spinner{
+    margin-top: 5rem;
+    --ggs:3
+}
+
+.spinner{
+    display: flex;
+    justify-content: center;
+  }

@@ -1,0 +1,10 @@
+.student-list{
+ margin-top: 2rem;
+}
+
+.student-item{
+    list-style: none;
+    cursor: pointer;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
