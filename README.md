@@ -1,4 +1,4 @@
-# NEU Alumni Collector Info
+# NEU Alumni Collector Info(Local Server, DBless)
 ## Introduction
 This is a SPA that is used to collect NEU alumni's information after graduation. Both students and advisors/faculties are allowed to use. Students will be able to login with their NEU account(xxx.xxx) and then edit the information(e.g. alternate email, job status, etc). Advisors/Faculties will also be able to login with their NEU account and view the stored information of users who have already submitted/updated their information.
 ## Available Scripts
